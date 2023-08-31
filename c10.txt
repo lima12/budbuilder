@@ -1,0 +1,91 @@
+REM Script to format and assign drive letters to 10 disks
+
+REM Disk 1
+list disk
+select disk 1
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="F"
+
+REM Disk 2
+list disk
+select disk 2
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="G"
+
+REM Disk 3
+list disk
+select disk 3
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="H"
+
+REM Disk 4
+list disk
+select disk 4
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="I"
+
+REM Disk 5
+list disk
+select disk 5
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="J"
+
+REM Disk 6
+list disk
+select disk 6
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="K"
+
+REM Disk 7
+list disk
+select disk 7
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="L"
+
+REM Disk 8
+list disk
+select disk 8
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="M"
+
+REM Disk 9
+list disk
+select disk 9
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="N"
+
+REM Disk 10
+list disk
+select disk 10
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="O"

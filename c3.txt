@@ -1,0 +1,26 @@
+REM Disk 1
+list disk
+select disk 1
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="F"
+
+REM Disk 2
+list disk
+select disk 2
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="G"
+
+REM Disk 3
+list disk
+select disk 3
+clean
+convert mbr
+create partition primary
+format quick fs=ntfs label="Backup Drive"
+assign letter="H"
